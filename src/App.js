@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import Header from './Components/Header.js';
 import Menus from './Components/Menus.js';
-import Tickets from './Components/Tickets.js';
+import Breadcrumb from './Components/Breadcrumb.js';
+import Tickets from './Components/Tickets/Tickets.js';
+import AddTicket from './Components/Tickets/AddTicket.js';
 import Footer from './Components/Footer.js';
 
 class App extends Component {
@@ -11,7 +13,11 @@ class App extends Component {
       <div className="App">
         <Header />
         <Menus />
+        <div className="content-wrapper">
+        <Breadcrumb />
         <Tickets />
+        <AddTicket />
+        </div>
         <Footer />
       </div>
     );

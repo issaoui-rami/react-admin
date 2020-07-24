@@ -5,18 +5,8 @@ export default class Tickets extends Component {
     return(
       <div>
 
-      <div className="content-wrapper">
-             {/* Content Header (Page header) */}
-             <section className="content-header">
-               <h1>
-                 Tickets
-                 <small>dashboard</small>
-               </h1>
-               <ol className="breadcrumb">
-                 <li><a href="#"><i className="fa fa-dashboard" /> Home</a></li>
-                 <li className="active">Tickets</li>
-               </ol>
-             </section>
+
+
 
              <section className="content">
 
@@ -74,7 +64,7 @@ export default class Tickets extends Component {
 
              </section>
              {/* /.content */}
-           </div>
+
       </div>
     )
   }

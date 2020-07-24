@@ -15,7 +15,7 @@ class Menus extends Component {
             </div>
             <div className="pull-left info">
               <p>Issaoui Rami</p>
-              <a href="#">Developer Multimedia</a>
+              <a href="fake_url">Developer Multimedia</a>
             </div>
           </div>
 
