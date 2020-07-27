@@ -5,7 +5,7 @@ export default class AddTicket extends Component {
     return(
       <div>
       <section className="content">
-        <div className="box box-warning">
+        <div className="box">
         <div className="box-header with-border">
           <h3 className="box-title">New ticket</h3>
         </div>
@@ -101,26 +101,17 @@ export default class AddTicket extends Component {
                 <option>test 3</option>
               </select>
             </div>
-            <div className="row">
-              <div className="col-lg-6 form-group">
-                  <label>Start Date:</label>
-                  <div className="input-group date">
+
+              <div className="form-group">
+                  <label>Date Creation / Date Fin:</label>
+                    <div className="input-group">
                     <div className="input-group-addon">
                       <i className="fa fa-calendar" />
                     </div>
-                    <input type="text" className="form-control pull-right" id="datepicker" />
+                    <input type="text" className="form-control pull-right" id="reservation" />
                   </div>
               </div>
-              <div className="col-lg-6 form-group">
-                  <label>End Date:</label>
-                  <div className="input-group date">
-                    <div className="input-group-addon">
-                      <i className="fa fa-calendar" />
-                    </div>
-                    <input type="text" className="form-control pull-right" id="datepicker" />
-                  </div>
-              </div>
-            </div>
+
             <button type="button" className="btn bg-olive btn-flat margin">Add New Ticket</button>
           </form>
         </div>

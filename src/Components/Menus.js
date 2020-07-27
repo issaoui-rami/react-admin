@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+import { NavLink } from "react-router-dom";
+
 class Menus extends Component {
 
   render() {
@@ -29,27 +31,35 @@ class Menus extends Component {
               </span>
             </div>
           </form>
+            <ul className="sidebar-menu" data-widget="tree">
 
-          <ul className="sidebar-menu" data-widget="tree">
+              <li>
+                <NavLink to="/">
+                  <i className="fa fa-dashboard" /> <span>Dashboard</span>
+                </NavLink>
+              </li>
+              <li className="treeview">
+                <a href="fake_url">
+                  <i className="fa fa-th" /> <span>Tickets</span>
+                  <span className="pull-right-container">
+                    <i className="fa fa-angle-left pull-right" />
+                  </span>
+                </a>
+                <ul className="treeview-menu">
+                  <li>
+                    <NavLink to="/addtickets">
+                      <i className="fa fa-circle-o" /> Ajouter Ticket
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/tickets">
+                      <i className="fa fa-circle-o" /> Tickets List
+                    </NavLink>
+                </li>
+                </ul>
+              </li>
 
-            <li className="active treeview">
-              <a href="fake_url">
-                <i className="fa fa-dashboard" /> <span>Dashboard</span></a>
-            </li>
-            <li className="treeview">
-              <a href="fake_url">
-                <i className="fa fa-th" /> <span>Tickets</span>
-                <span className="pull-right-container">
-                  <i className="fa fa-angle-left pull-right" />
-                </span>
-              </a>
-              <ul className="treeview-menu">
-                <li><a href="fake_url"><i className="fa fa-circle-o" /> Ajouter Ticket</a></li>
-                <li><a href="fake_url"><i className="fa fa-circle-o" /> Tickets List</a></li>
-              </ul>
-            </li>
-
-          </ul>
+            </ul>
         </section>
       </aside>
       </div>
