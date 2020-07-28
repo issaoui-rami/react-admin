@@ -48,12 +48,32 @@ class Menus extends Component {
                 <ul className="treeview-menu">
                   <li>
                     <NavLink to="/addtickets">
-                      <i className="fa fa-circle-o" /> Ajouter Ticket
+                      <i className="fa fa-circle-o" /> Add Ticket
                     </NavLink>
                   </li>
                   <li>
                     <NavLink to="/tickets">
                       <i className="fa fa-circle-o" /> Tickets List
+                    </NavLink>
+                </li>
+                </ul>
+              </li>
+              <li className="treeview">
+                <a href="fake_url">
+                  <i className="fa fa-github" /> <span>Projets</span>
+                  <span className="pull-right-container">
+                    <i className="fa fa-angle-left pull-right" />
+                  </span>
+                </a>
+                <ul className="treeview-menu">
+                  <li>
+                    <NavLink to="/addprojet">
+                      <i className="fa fa-circle-o" /> Add Projet
+                    </NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/projets">
+                      <i className="fa fa-circle-o" /> Projets List
                     </NavLink>
                 </li>
                 </ul>
